@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Jurnal | SMAS Kristen Petra 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<div class="container my-5">
+    <div class="card border-0 shadow-lg">
+        <div class="header-gradient text-white p-4 d-flex justify-content-between align-items-center">
+            <a href="index.html" class="text-white text-decoration-none fw-bold"><i class="bi bi-arrow-left"></i> Dashboard</a>
+            <h4 class="mb-0 fw-bold">ISI JURNAL PEMBELAJARAN</h4>
+            <span></span>
+        </div>
+        <div class="card-body p-4 p-lg-5 bg-white">
+            <form id="formJurnal">
+                <div class="row g-4">
+                    <div class="col-md-4"><label class="form-label fw-bold">Tanggal</label><input type="date" id="in_tanggal" class="form-control custom-input" required></div>
+                    <div class="col-md-4"><label class="form-label fw-bold">Unit / Kelas</label><input type="text" id="in_kelas" class="form-control bg-light custom-input" readonly></div>
+                    <div class="col-md-4"><label class="form-label fw-bold">Jam Ke-</label><input type="text" id="in_jam" class="form-control custom-input" placeholder="Misal: 1-2" required></div>
+                    
+                    <div class="col-md-6"><label class="form-label fw-bold">Guru Pengajar</label><select id="in_guru" class="form-select custom-input" required><option value="">-- Pilih Nama Guru --</option></select></div>
+                    <div class="col-md-6"><label class="form-label fw-bold">Mata Pelajaran</label><select id="in_mapel" class="form-select custom-input" required><option value="">-- Pilih Mapel --</option></select></div>
+                    
+                    <div class="col-12"><label class="form-label fw-bold">Detail Materi / Topik</label><input type="text" id="in_materi_detail" class="form-control custom-input" required placeholder="Contoh: Bab 2 - Dinamika Hidrosfer"></div>
+                    <div class="col-12"><label class="form-label fw-bold">Kegiatan Pembelajaran</label><textarea id="in_kegiatan" class="form-control custom-input" rows="2"></textarea></div>
+                    
+                    <div class="col-md-6"><label class="form-label fw-bold">Penugasan</label><input type="text" id="in_tugas" class="form-control custom-input" placeholder="Isi (-) jika tidak ada"></div>
+                    <div class="col-md-2 col-6"><label class="form-label fw-bold">Hadir</label><input type="number" id="in_hadir" class="form-control text-center custom-input" value="0"></div>
+                    <div class="col-md-2 col-6"><label class="form-label fw-bold">Absen</label><input type="number" id="in_absen" class="form-control text-center custom-input" value="0"></div>
+                    <div class="col-md-2"><label class="form-label fw-bold">Ket (S/I/A)</label><input type="text" id="in_ket" class="form-control custom-input"></div>
+                    
+                    <div class="col-12 text-center mt-5">
+                        <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5 shadow">SIMPAN JURNAL</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
